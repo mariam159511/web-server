@@ -4,4 +4,4 @@ const port = 8888;
 
 app.get('/', (req, res) => res.send('This is front-end'));
 
-app.listen(port);
+app.listen(port, () => console.log(`App listening on port ${port}!`));
